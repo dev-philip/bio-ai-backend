@@ -1,0 +1,11 @@
+fastapi>=0.100.0
+uvicorn[standard]
+sqlalchemy
+pydantic>=2.0,<3.0
+pydantic-settings
+python-dotenv
+mysql-connector-python
+alembic
+httpx
+pytest
+email-validator
