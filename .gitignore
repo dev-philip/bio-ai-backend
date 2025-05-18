@@ -64,3 +64,4 @@ uvicorn.log
 #My Files
 system_design.txt
 dependency.txt
+stories/

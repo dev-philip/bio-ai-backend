@@ -9,3 +9,15 @@ alembic
 httpx
 pytest
 email-validator
+python-docx
+pymupdf
+python-multipart
+nltk
+openai
+langchain
+langchain-community
+requests
+biopython
+sentence-transformers
+faiss-cpu==1.11.0
+numpy<2.0
