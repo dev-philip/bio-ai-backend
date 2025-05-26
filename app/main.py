@@ -1,11 +1,14 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from app.database import engine
-from app.models import user
+from app.database import Base, engine
+#Models - import all models
+from app.models import user 
+from app.models import student
 #Routers
 from app.routers import pubmed as pubmed_router
 from app.routers import user as user_router
+from app.routers import student as student_router
 from app.routers import text_extraction as text_extraction_router
 from app.routers import text_cleaning as text_cleaning_router
 from app.routers import image_analysis as image_analysis_router
@@ -13,7 +16,8 @@ from app.routers import image_analysis as image_analysis_router
 import logging
 
 # Create all tables
-user.Base.metadata.create_all(bind=engine)
+# user.Base.metadata.create_all(bind=engine)
+Base.metadata.create_all(bind=engine)
 
 # Initialize app
 app = FastAPI(
@@ -51,6 +55,7 @@ def read_root():
 
 # Register user routes
 app.include_router(user_router.router, prefix="/users", tags=["Users"])
+app.include_router(student_router.router, prefix="/students", tags=["Students"])
 app.include_router(text_extraction_router.router, prefix="/nlp", tags=["NLP"])  
 app.include_router(text_cleaning_router.router, prefix="/nlp", tags=["NLP"])
 app.include_router(image_analysis_router.router, prefix="/vision", tags=["Vision"])

@@ -1,38 +1,32 @@
-from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.orm import Session
+from pydantic import BaseModel, EmailStr
+from app.dependencies import get_db
+from app.models.user import User
 
 router = APIRouter()
 
-# In-memory user store (for demo purposes)
-fake_users_db = [
-    {"id": 1, "name": "Philip Awobusuyi", "email": "philip@example.com"},
-    {"id": 2, "name": "Jane Doe", "email": "jane@example.com"},
-]
-
+# Pydantic model for input
 class UserCreate(BaseModel):
     name: str
-    email: str
+    email: EmailStr
 
-# GET /users/
-@router.get("/")
-def get_users():
-    return {"users": fake_users_db}
+# POST /users → Add a new user
+@router.post("/save")
+def create_user(user: UserCreate, db: Session = Depends(get_db)):
+    existing = db.query(User).filter(User.email == user.email).first()
+    if existing:
+        raise HTTPException(status_code=400, detail="Email already registered")
 
-# POST /users/
-@router.post("/")
-def create_user(user: UserCreate):
-    new_user = {
-        "id": len(fake_users_db) + 1,
-        "name": user.name,
-        "email": user.email
-    }
-    fake_users_db.append(new_user)
-    return {"message": "User created successfully", "user": new_user}
+    new_user = User(name=user.name, email=user.email)
+    db.add(new_user)
+    db.commit()
+    db.refresh(new_user)
 
-# GET /users/{user_id}
-@router.get("/{user_id}")
-def get_user_by_id(user_id: int):
-    user = next((u for u in fake_users_db if u["id"] == user_id), None)
-    if not user:
-        raise HTTPException(status_code=404, detail="User not found")
-    return {"user": user}
+    return {"id": new_user.id, "name": new_user.name, "email": new_user.email}
+
+# GET /users → List all users
+@router.get("/all")
+def get_users(db: Session = Depends(get_db)):
+    users = db.query(User).all()
+    return [{"id": u.id, "name": u.name, "email": u.email} for u in users]

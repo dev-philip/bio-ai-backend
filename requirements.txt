@@ -4,7 +4,6 @@ sqlalchemy
 pydantic>=2.0,<3.0
 pydantic-settings
 python-dotenv
-mysql-connector-python
 alembic
 httpx
 pytest
@@ -22,6 +21,9 @@ sentence-transformers
 redis
 faiss-cpu==1.11.0
 numpy<2.0
+asyncpg
+databases
+psycopg2-binary
 
 #Biomedical NLP
 spacy>=3.6.1
