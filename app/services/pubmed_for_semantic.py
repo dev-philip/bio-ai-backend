@@ -2,7 +2,6 @@ from Bio import Entrez
 from typing import List, Dict
 from fastapi.concurrency import run_in_threadpool
 from app.services.redis_cache import get_cached_pubmed_result, set_cached_pubmed_result
-from app.services.semantic_scholar import get_citations_and_references  # Assuming you have this from earlier
 
 Entrez.email = "olamideawobusuyi2001@gmail.com"
 Entrez.tool = "bio-ai-backend"
@@ -120,11 +119,11 @@ def _search_and_extract(claim: str, max_results: int = 100) -> List[Dict[str, st
                 # "citations": enrichment["citations"],
                 # "references": enrichment["references"]
             })
-    print("Result not coming from cache")
+
     return abstracts
 
 # Async wrapper with Redis caching
-async def search_and_extract(claim: str, max_results: int = 100) -> List[Dict[str, str]]:
+async def search_and_extract_semantic(claim: str, max_results: int = 100) -> List[Dict[str, str]]:
     # Step 1: Try Redis cache
     cached = get_cached_pubmed_result(claim)
     if cached:
@@ -138,3 +137,34 @@ async def search_and_extract(claim: str, max_results: int = 100) -> List[Dict[st
     set_cached_pubmed_result(claim, results)
 
     return results
+
+def build_embedding_text(article: dict) -> str:
+    """
+    Build a semantically rich string from article metadata for embedding.
+
+    Args:
+        article (dict): A dictionary containing article metadata.
+
+    Returns:
+        str: Concatenated string suitable for semantic embedding.
+    """
+    title = article.get("title", "")
+    abstract = article.get("abstract", "")
+    mesh_terms = ", ".join(article.get("mesh_terms", []))
+    article_types = ", ".join(article.get("article_types", []))
+    journal = article.get("journal", "")
+    year = article.get("year", "")
+
+    # Optional: Add top 3 authors if needed
+    # authors = ", ".join(article.get("authors", [])[:3])
+
+    parts = [
+        f"Title: {title}",
+        f"Abstract: {abstract}",
+        f"MeSH Terms: {mesh_terms}" if mesh_terms else "",
+        f"Article Type: {article_types}" if article_types else "",
+        f"Published in {journal} ({year})" if journal or year else "",
+        # f"Authors: {authors}" if authors else "",
+    ]
+
+    return " ".join(p for p in parts if p).strip()

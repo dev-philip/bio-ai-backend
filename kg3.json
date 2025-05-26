@@ -1,0 +1,60 @@
+{
+  "clain_id" : 82392819831,  
+  "claim": "The inhibition of TNF-alpha in human macrophages reduces inflammation and protects neuronal cells in Alzheimer's disease.",
+  "cleaned": "inhibition tnf-alpha human macrophages reduces inflammation protects neuronal cells alzheimer disease",
+  "semantic_searchable": "inhibition tnf-alpha human macrophages reduces inflammation protects neuronal cells alzheimer disease. Key terms: TNF-alpha, human macrophages, neuronal cells",
+  "entities": ["TNF-alpha", "human macrophages", "neuronal cells"],
+  "biomedical_entities": {
+    "gene_or_gene_product": ["TNF-alpha"],
+    "organism": ["human macrophages"],
+    "cell": ["neuronal cells"]
+  },
+  "semantic_results": [
+    {
+      "pmid": "40179319",
+      "pmcid": "PMC12074813",
+      "doi": "10.18632/aging.206236",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40179319/",
+      "title": "NAD+ centric mechanisms and molecular determinants of skeletal muscle disease and aging.",
+      "abstract": "The nicotinamide adenine dinucleotide (NAD+) is an essential redox cofactor...",
+      "mesh_terms": ["Aging", "Animals", "Epigenesis, Genetic", "Mice", "Muscle, Skeletal", "Muscular Diseases", "NAD", "Poly(ADP-ribose) Polymerases"],
+      "authors": [
+        {"authorId": "36468098", "name": "Anthony J. Covarrubias"},
+        {"authorId": "144328338", "name": "Rosalba Perrone"}
+      ],
+      "semantic_string": "Title: NAD+ centric mechanisms...",
+      "similarity": 0.6881,
+      "cited_papers": [
+        {
+          "paperId": "4a1f3b91897f96b09d07e883e67215b805623671",
+          "url": "https://www.semanticscholar.org/paper/...",
+          "title": "SLC25A51 decouples the mitochondrial NAD+/NADH ratio...",
+          "abstract": "The nicotinamide adenine dinucleotide (NAD+) is an essential redox cofactor...",
+          "venue": "Cell Metabolism",
+          "year": 2024,
+          "authors": [
+            {"authorId": "2111087142", "name": "Mu-Jie Lu"},
+            {"authorId": "2017943828", "name": "Jonathan Busquets"}
+          ]
+        }
+      ],
+      "reference_papers": [
+        {
+          "paperId": "4a1f3b91897f96b09d07e883e67215b805623671",
+          "url": "https://www.semanticscholar.org/paper/...",
+          "title": "SLC25A51 decouples the mitochondrial NAD+/NADH ratio...",
+          "abstract": "The nicotinamide adenine dinucleotide (NAD+) is an essential redox cofactor...",
+          "venue": "Cell Metabolism",
+          "year": 2024,
+          "authors": [
+            {"authorId": "2111087142", "name": "Mu-Jie Lu"},
+            {"authorId": "2017943828", "name": "Jonathan Busquets"}
+          ]
+        }
+      ]
+    }
+  ],
+  "source_type": "text",
+  "timestamp": "2025-05-20T14:30:00Z",
+  "null_hypothesis_detected": false
+}

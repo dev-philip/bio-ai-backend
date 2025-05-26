@@ -19,5 +19,17 @@ langchain-community
 requests
 biopython
 sentence-transformers
+redis
 faiss-cpu==1.11.0
 numpy<2.0
+
+#Biomedical NLP
+spacy>=3.6.1
+scispacy
+#nlp = spacy.load("en_core_sci_md")
+#pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.3/en_core_sci_md-0.5.3.tar.gz
+
+#nlp = spacy.load("en_ner_bionlp13cg_md")
+# pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.3/en_ner_bionlp13cg_md-0.5.3.tar.gz
+
+

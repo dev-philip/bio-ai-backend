@@ -135,3 +135,34 @@ Pull requests and contributions are welcome! Please open an issue first to discu
 
 http://127.0.0.1:8000 → Welcome message
 http://127.0.0.1:8000/docs → Swagger UI
+
+## Example of git workflow
+
+# 1. Create and switch to the new branch
+
+git checkout -b nlp-pipeline
+
+# 2. Now you're on nlp-pipeline branch. Just add and commit your changes:
+
+git add .
+git commit -m "Initial commit for NLP pipeline"
+
+# 3. Push the branch to remote
+
+git push origin nlp-pipeline
+
+# 4. Switch back to the main branch
+
+git checkout main
+
+# 5. Pull latest changes from remote (optional, to sync)
+
+git pull origin main
+
+# 6. Merge the changes from nlp-pipeline into main
+
+git merge nlp-pipeline
+
+# 7.
+
+git push origin main

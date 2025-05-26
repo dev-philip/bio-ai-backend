@@ -1,0 +1,301 @@
+{
+    "claim": "The inhibition of TNF-alpha in human macrophages reduces inflammation and protects neuronal cells in Alzheimer's disease.",
+    "cleaned": "inhibition tnf-alpha human macrophages reduces inflammation protects neuronal cells alzheimer disease",
+    "Semantic_searchable": "inhibition tnf-alpha human macrophages reduces inflammation protects neuronal cells alzheimer disease. Key terms: TNF-alpha, human macrophages, neuronal cells",
+    "entities": [
+        "TNF-alpha",
+        "human macrophages",
+        "neuronal cells"
+    ],
+    "biomedical_entities": {
+        "gene_or_gene_product": [
+            "TNF-alpha"
+        ],
+        "organism": [
+            "human macrophages"
+        ],
+        "cell": [
+            "neuronal cells"
+        ]
+    },
+    "simantic_results": [
+        {
+            "pmid": "40179319",
+            "pmcid": "PMC12074813",
+            "doi": "10.18632/aging.206236",
+            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40179319/",
+            "title": "NAD<sup>+</sup> centric mechanisms and molecular determinants of skeletal muscle disease and aging.",
+            "abstract": "The nicotinamide adenine dinucleotide (NAD<sup>+</sup>) is an essential redox cofactor, involved in various physiological and molecular processes, including energy metabolism, epigenetics, aging, and metabolic diseases. NAD<sup>+</sup> repletion ameliorates muscular dystrophy and improves the mitochondrial and muscle stem cell function and thereby increase lifespan in mice. Accordingly, NAD<sup>+</sup> is considered as an anti-oxidant and anti-aging molecule. NAD<sup>+</sup> plays a central role in energy metabolism and the energy produced is used for movements, thermoregulation, and defense against foreign bodies. The dietary precursors of NAD<sup>+</sup> synthesis is targeted to improve NAD<sup>+</sup> biosynthesis; however, studies have revealed conflicting results regarding skeletal muscle-specific effects. Recent advances in the activation of nicotinamide phosphoribosyltransferase in the NAD<sup>+</sup> salvage pathway and supplementation of NAD<sup>+</sup> precursors have led to beneficial effects in skeletal muscle pathophysiology and function during aging and associated metabolic diseases. NAD<sup>+</sup> is also involved in the epigenetic regulation and post-translational modifications of proteins that are involved in various cellular processes to maintain tissue homeostasis. This review provides detailed insights into the roles of NAD<sup>+</sup> along with molecular mechanisms during aging and disease conditions, such as the impacts of age-related NAD<sup>+</sup> deficiencies on NAD<sup>+</sup>-dependent enzymes, including poly (ADP-ribose) polymerase (PARPs), CD38, and sirtuins within skeletal muscle, and the most recent studies on the potential of nutritional supplementation and distinct modes of exercise to replenish the NAD<sup>+</sup> pool.",
+            "mesh_terms": [
+                "Aging",
+                "Animals",
+                "Epigenesis, Genetic",
+                "Mice",
+                "Muscle, Skeletal",
+                "Muscular Diseases",
+                "NAD",
+                "Poly(ADP-ribose) Polymerases"
+            ],"authors": [
+                {
+                    "authorId": "36468098",
+                    "name": "Anthony J. Covarrubias"
+                },
+                {
+                    "authorId": "144328338",
+                    "name": "Rosalba Perrone"
+                },
+                {
+                    "authorId": "6668638",
+                    "name": "Alessia Grozio"
+                },
+                {
+                    "authorId": "144984118",
+                    "name": "E. Verdin"
+                }
+            ],
+            "semantic_string": "Title: NAD<sup>+</sup> centric mechanisms and molecular determinants of skeletal muscle disease and aging. Abstract: The nicotinamide adenine dinucleotide (NAD<sup>+</sup>) is an essential redox cofactor, involved in various physiological and molecular processes, including energy metabolism, epigenetics, aging, and metabolic diseases. NAD<sup>+</sup> repletion ameliorates muscular dystrophy and improves the mitochondrial and muscle stem cell function and thereby increase lifespan in mice. Accordingly, NAD<sup>+</sup> is considered as an anti-oxidant and anti-aging molecule. NAD<sup>+</sup> plays a central role in energy metabolism and the energy produced is used for movements, thermoregulation, and defense against foreign bodies. The dietary precursors of NAD<sup>+</sup> synthesis is targeted to improve NAD<sup>+</sup> biosynthesis; however, studies have revealed conflicting results regarding skeletal muscle-specific effects. Recent advances in the activation of nicotinamide phosphoribosyltransferase in the NAD<sup>+</sup> salvage pathway and supplementation of NAD<sup>+</sup> precursors have led to beneficial effects in skeletal muscle pathophysiology and function during aging and associated metabolic diseases. NAD<sup>+</sup> is also involved in the epigenetic regulation and post-translational modifications of proteins that are involved in various cellular processes to maintain tissue homeostasis. This review provides detailed insights into the roles of NAD<sup>+</sup> along with molecular mechanisms during aging and disease conditions, such as the impacts of age-related NAD<sup>+</sup> deficiencies on NAD<sup>+</sup>-dependent enzymes, including poly (ADP-ribose) polymerase (PARPs), CD38, and sirtuins within skeletal muscle, and the most recent studies on the potential of nutritional supplementation and distinct modes of exercise to replenish the NAD<sup>+</sup> pool. MeSH Terms: Aging, Animals, Epigenesis, Genetic, Mice, Muscle, Skeletal, Muscular Diseases, NAD, Poly(ADP-ribose) Polymerases Article Type: Journal Article, Review Published in Molecular and cellular biochemistry (2022)",
+            "similarity": 0.6881,
+            "citedpapers" [
+                {
+                    "citedPaper": {
+                    "paperId": "4a1f3b91897f96b09d07e883e67215b805623671",
+                    "url": "https://www.semanticscholar.org/paper/4a1f3b91897f96b09d07e883e67215b805623671",
+                    "title": "SLC25A51 decouples the mitochondrial NAD+/NADH ratio to control proliferation of AML cells.",
+                    "abstract": "The nicotinamide adenine dinucleotide (NAD<sup>+</sup>) is an essential redox cofactor, involved in various physiological and molecular processes, including energy metabolism, epigenetics, aging, and metabolic diseases. NAD<sup>+</sup> repletion ameliorates muscular dystrophy and improves the mitochondrial and muscle stem cell function and thereby increase lifespan in mice. Accordingly, NAD<sup>+</sup> is considered as an anti-oxidant and anti-aging molecule. NAD<sup>+</sup> plays a central role in energy metabolism and the energy produced is used for movements, thermoregulation, and defense against foreign bodies. The dietary precursors of NAD<sup>+</sup> synthesis is targeted to improve NAD<sup>+</sup> biosynthesis; however, studies have revealed conflicting results regarding skeletal muscle-specific effects. Recent advances in the activation of nicotinamide phosphoribosyltransferase in the NAD<sup>+</sup> salvage pathway and supplementation of NAD<sup>+</sup> precursors have led to beneficial effects in skeletal muscle pathophysiology and function during aging and associated metabolic diseases. NAD<sup>+</sup> is also involved in the epigenetic regulation and post-translational modifications of proteins that are involved in various cellular processes to maintain tissue homeostasis. This review provides detailed insights into the roles of NAD<sup>+</sup> along with molecular mechanisms during aging and disease conditions, such as the impacts of age-related NAD<sup>+</sup> deficiencies on NAD<sup>+</sup>-dependent enzymes, including poly (ADP-ribose) polymerase (PARPs), CD38, and sirtuins within skeletal muscle, and the most recent studies on the potential of nutritional supplementation and distinct modes of exercise to replenish the NAD<sup>+</sup> pool.",
+                    "venue": "Cell Metabolism",
+                    "year": 2024,
+                    "authors": [
+                        {
+                            "authorId": "2111087142",
+                            "name": "Mu-Jie Lu"
+                        },
+                        {
+                            "authorId": "2017943828",
+                            "name": "Jonathan Busquets"
+                        },
+                        {
+                            "authorId": "2149680076",
+                            "name": "Valeria Impedovo"
+                        },
+                        {
+                            "authorId": "2158149346",
+                            "name": "Crystal N Wilson"
+                        },
+                        {
+                            "authorId": "2116077864",
+                            "name": "Hsin-Ru Chan"
+                        },
+                        {
+                            "authorId": "2284324538",
+                            "name": "Yu-Tai Chang"
+                        },
+                        {
+                            "authorId": "2284197913",
+                            "name": "William Matsui"
+                        },
+                        {
+                            "authorId": "3078559",
+                            "name": "S. Tiziani"
+                        },
+                        {
+                            "authorId": "4630479",
+                            "name": "Xiaolu A. Cambronne"
+                        }
+                    ]
+                    }
+    
+                }
+            ],
+            "referencepapers" [
+                {
+                    "referencepapers": {
+                    "paperId": "4a1f3b91897f96b09d07e883e67215b805623671",
+                    "url": "https://www.semanticscholar.org/paper/4a1f3b91897f96b09d07e883e67215b805623671",
+                    "title": "SLC25A51 decouples the mitochondrial NAD+/NADH ratio to control proliferation of AML cells.",
+                    "abstract": "The nicotinamide adenine dinucleotide (NAD<sup>+</sup>) is an essential redox cofactor, involved in various physiological and molecular processes, including energy metabolism, epigenetics, aging, and metabolic diseases. NAD<sup>+</sup> repletion ameliorates muscular dystrophy and improves the mitochondrial and muscle stem cell function and thereby increase lifespan in mice. Accordingly, NAD<sup>+</sup> is considered as an anti-oxidant and anti-aging molecule. NAD<sup>+</sup> plays a central role in energy metabolism and the energy produced is used for movements, thermoregulation, and defense against foreign bodies. The dietary precursors of NAD<sup>+</sup> synthesis is targeted to improve NAD<sup>+</sup> biosynthesis; however, studies have revealed conflicting results regarding skeletal muscle-specific effects. Recent advances in the activation of nicotinamide phosphoribosyltransferase in the NAD<sup>+</sup> salvage pathway and supplementation of NAD<sup>+</sup> precursors have led to beneficial effects in skeletal muscle pathophysiology and function during aging and associated metabolic diseases. NAD<sup>+</sup> is also involved in the epigenetic regulation and post-translational modifications of proteins that are involved in various cellular processes to maintain tissue homeostasis. This review provides detailed insights into the roles of NAD<sup>+</sup> along with molecular mechanisms during aging and disease conditions, such as the impacts of age-related NAD<sup>+</sup> deficiencies on NAD<sup>+</sup>-dependent enzymes, including poly (ADP-ribose) polymerase (PARPs), CD38, and sirtuins within skeletal muscle, and the most recent studies on the potential of nutritional supplementation and distinct modes of exercise to replenish the NAD<sup>+</sup> pool.",
+                    "venue": "Cell Metabolism",
+                    "year": 2024,
+                    "authors": [
+                        {
+                            "authorId": "2111087142",
+                            "name": "Mu-Jie Lu"
+                        },
+                        {
+                            "authorId": "2017943828",
+                            "name": "Jonathan Busquets"
+                        },
+                        {
+                            "authorId": "2149680076",
+                            "name": "Valeria Impedovo"
+                        },
+                        {
+                            "authorId": "2158149346",
+                            "name": "Crystal N Wilson"
+                        },
+                        {
+                            "authorId": "2116077864",
+                            "name": "Hsin-Ru Chan"
+                        },
+                        {
+                            "authorId": "2284324538",
+                            "name": "Yu-Tai Chang"
+                        },
+                        {
+                            "authorId": "2284197913",
+                            "name": "William Matsui"
+                        },
+                        {
+                            "authorId": "3078559",
+                            "name": "S. Tiziani"
+                        },
+                        {
+                            "authorId": "4630479",
+                            "name": "Xiaolu A. Cambronne"
+                        }
+                    ]
+                    }
+    
+                }
+            ]
+        },
+        {
+            "pmid": "40179319",
+            "pmcid": "PMC12074813",
+            "doi": "10.18632/aging.206236",
+            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40179319/",
+            "title": "NAD<sup>+</sup> centric mechanisms and molecular determinants of skeletal muscle disease and aging.",
+            "abstract": "The nicotinamide adenine dinucleotide (NAD<sup>+</sup>) is an essential redox cofactor, involved in various physiological and molecular processes, including energy metabolism, epigenetics, aging, and metabolic diseases. NAD<sup>+</sup> repletion ameliorates muscular dystrophy and improves the mitochondrial and muscle stem cell function and thereby increase lifespan in mice. Accordingly, NAD<sup>+</sup> is considered as an anti-oxidant and anti-aging molecule. NAD<sup>+</sup> plays a central role in energy metabolism and the energy produced is used for movements, thermoregulation, and defense against foreign bodies. The dietary precursors of NAD<sup>+</sup> synthesis is targeted to improve NAD<sup>+</sup> biosynthesis; however, studies have revealed conflicting results regarding skeletal muscle-specific effects. Recent advances in the activation of nicotinamide phosphoribosyltransferase in the NAD<sup>+</sup> salvage pathway and supplementation of NAD<sup>+</sup> precursors have led to beneficial effects in skeletal muscle pathophysiology and function during aging and associated metabolic diseases. NAD<sup>+</sup> is also involved in the epigenetic regulation and post-translational modifications of proteins that are involved in various cellular processes to maintain tissue homeostasis. This review provides detailed insights into the roles of NAD<sup>+</sup> along with molecular mechanisms during aging and disease conditions, such as the impacts of age-related NAD<sup>+</sup> deficiencies on NAD<sup>+</sup>-dependent enzymes, including poly (ADP-ribose) polymerase (PARPs), CD38, and sirtuins within skeletal muscle, and the most recent studies on the potential of nutritional supplementation and distinct modes of exercise to replenish the NAD<sup>+</sup> pool.",
+            "mesh_terms": [
+                "Aging",
+                "Animals",
+                "Epigenesis, Genetic",
+                "Mice",
+                "Muscle, Skeletal",
+                "Muscular Diseases",
+                "NAD",
+                "Poly(ADP-ribose) Polymerases"
+            ],"authors": [
+                {
+                    "authorId": "36468098",
+                    "name": "Anthony J. Covarrubias"
+                },
+                {
+                    "authorId": "144328338",
+                    "name": "Rosalba Perrone"
+                },
+                {
+                    "authorId": "6668638",
+                    "name": "Alessia Grozio"
+                },
+                {
+                    "authorId": "144984118",
+                    "name": "E. Verdin"
+                }
+            ],
+            "semantic_string": "Title: NAD<sup>+</sup> centric mechanisms and molecular determinants of skeletal muscle disease and aging. Abstract: The nicotinamide adenine dinucleotide (NAD<sup>+</sup>) is an essential redox cofactor, involved in various physiological and molecular processes, including energy metabolism, epigenetics, aging, and metabolic diseases. NAD<sup>+</sup> repletion ameliorates muscular dystrophy and improves the mitochondrial and muscle stem cell function and thereby increase lifespan in mice. Accordingly, NAD<sup>+</sup> is considered as an anti-oxidant and anti-aging molecule. NAD<sup>+</sup> plays a central role in energy metabolism and the energy produced is used for movements, thermoregulation, and defense against foreign bodies. The dietary precursors of NAD<sup>+</sup> synthesis is targeted to improve NAD<sup>+</sup> biosynthesis; however, studies have revealed conflicting results regarding skeletal muscle-specific effects. Recent advances in the activation of nicotinamide phosphoribosyltransferase in the NAD<sup>+</sup> salvage pathway and supplementation of NAD<sup>+</sup> precursors have led to beneficial effects in skeletal muscle pathophysiology and function during aging and associated metabolic diseases. NAD<sup>+</sup> is also involved in the epigenetic regulation and post-translational modifications of proteins that are involved in various cellular processes to maintain tissue homeostasis. This review provides detailed insights into the roles of NAD<sup>+</sup> along with molecular mechanisms during aging and disease conditions, such as the impacts of age-related NAD<sup>+</sup> deficiencies on NAD<sup>+</sup>-dependent enzymes, including poly (ADP-ribose) polymerase (PARPs), CD38, and sirtuins within skeletal muscle, and the most recent studies on the potential of nutritional supplementation and distinct modes of exercise to replenish the NAD<sup>+</sup> pool. MeSH Terms: Aging, Animals, Epigenesis, Genetic, Mice, Muscle, Skeletal, Muscular Diseases, NAD, Poly(ADP-ribose) Polymerases Article Type: Journal Article, Review Published in Molecular and cellular biochemistry (2022)",
+            "similarity": 0.6881,
+            "citedpapers" [
+                {
+                    "citedPaper": {
+                    "paperId": "4a1f3b91897f96b09d07e883e67215b805623671",
+                    "url": "https://www.semanticscholar.org/paper/4a1f3b91897f96b09d07e883e67215b805623671",
+                    "title": "SLC25A51 decouples the mitochondrial NAD+/NADH ratio to control proliferation of AML cells.",
+                    "abstract": "The nicotinamide adenine dinucleotide (NAD<sup>+</sup>) is an essential redox cofactor, involved in various physiological and molecular processes, including energy metabolism, epigenetics, aging, and metabolic diseases. NAD<sup>+</sup> repletion ameliorates muscular dystrophy and improves the mitochondrial and muscle stem cell function and thereby increase lifespan in mice. Accordingly, NAD<sup>+</sup> is considered as an anti-oxidant and anti-aging molecule. NAD<sup>+</sup> plays a central role in energy metabolism and the energy produced is used for movements, thermoregulation, and defense against foreign bodies. The dietary precursors of NAD<sup>+</sup> synthesis is targeted to improve NAD<sup>+</sup> biosynthesis; however, studies have revealed conflicting results regarding skeletal muscle-specific effects. Recent advances in the activation of nicotinamide phosphoribosyltransferase in the NAD<sup>+</sup> salvage pathway and supplementation of NAD<sup>+</sup> precursors have led to beneficial effects in skeletal muscle pathophysiology and function during aging and associated metabolic diseases. NAD<sup>+</sup> is also involved in the epigenetic regulation and post-translational modifications of proteins that are involved in various cellular processes to maintain tissue homeostasis. This review provides detailed insights into the roles of NAD<sup>+</sup> along with molecular mechanisms during aging and disease conditions, such as the impacts of age-related NAD<sup>+</sup> deficiencies on NAD<sup>+</sup>-dependent enzymes, including poly (ADP-ribose) polymerase (PARPs), CD38, and sirtuins within skeletal muscle, and the most recent studies on the potential of nutritional supplementation and distinct modes of exercise to replenish the NAD<sup>+</sup> pool.",
+                    "venue": "Cell Metabolism",
+                    "year": 2024,
+                    "authors": [
+                        {
+                            "authorId": "2111087142",
+                            "name": "Mu-Jie Lu"
+                        },
+                        {
+                            "authorId": "2017943828",
+                            "name": "Jonathan Busquets"
+                        },
+                        {
+                            "authorId": "2149680076",
+                            "name": "Valeria Impedovo"
+                        },
+                        {
+                            "authorId": "2158149346",
+                            "name": "Crystal N Wilson"
+                        },
+                        {
+                            "authorId": "2116077864",
+                            "name": "Hsin-Ru Chan"
+                        },
+                        {
+                            "authorId": "2284324538",
+                            "name": "Yu-Tai Chang"
+                        },
+                        {
+                            "authorId": "2284197913",
+                            "name": "William Matsui"
+                        },
+                        {
+                            "authorId": "3078559",
+                            "name": "S. Tiziani"
+                        },
+                        {
+                            "authorId": "4630479",
+                            "name": "Xiaolu A. Cambronne"
+                        }
+                    ]
+                    }
+    
+                }
+            ],
+            "referencepapers" [
+                {
+                    "referencepapers": {
+                    "paperId": "4a1f3b91897f96b09d07e883e67215b805623671",
+                    "url": "https://www.semanticscholar.org/paper/4a1f3b91897f96b09d07e883e67215b805623671",
+                    "title": "SLC25A51 decouples the mitochondrial NAD+/NADH ratio to control proliferation of AML cells.",
+                    "abstract": "The nicotinamide adenine dinucleotide (NAD<sup>+</sup>) is an essential redox cofactor, involved in various physiological and molecular processes, including energy metabolism, epigenetics, aging, and metabolic diseases. NAD<sup>+</sup> repletion ameliorates muscular dystrophy and improves the mitochondrial and muscle stem cell function and thereby increase lifespan in mice. Accordingly, NAD<sup>+</sup> is considered as an anti-oxidant and anti-aging molecule. NAD<sup>+</sup> plays a central role in energy metabolism and the energy produced is used for movements, thermoregulation, and defense against foreign bodies. The dietary precursors of NAD<sup>+</sup> synthesis is targeted to improve NAD<sup>+</sup> biosynthesis; however, studies have revealed conflicting results regarding skeletal muscle-specific effects. Recent advances in the activation of nicotinamide phosphoribosyltransferase in the NAD<sup>+</sup> salvage pathway and supplementation of NAD<sup>+</sup> precursors have led to beneficial effects in skeletal muscle pathophysiology and function during aging and associated metabolic diseases. NAD<sup>+</sup> is also involved in the epigenetic regulation and post-translational modifications of proteins that are involved in various cellular processes to maintain tissue homeostasis. This review provides detailed insights into the roles of NAD<sup>+</sup> along with molecular mechanisms during aging and disease conditions, such as the impacts of age-related NAD<sup>+</sup> deficiencies on NAD<sup>+</sup>-dependent enzymes, including poly (ADP-ribose) polymerase (PARPs), CD38, and sirtuins within skeletal muscle, and the most recent studies on the potential of nutritional supplementation and distinct modes of exercise to replenish the NAD<sup>+</sup> pool.",
+                    "venue": "Cell Metabolism",
+                    "year": 2024,
+                    "authors": [
+                        {
+                            "authorId": "2111087142",
+                            "name": "Mu-Jie Lu"
+                        },
+                        {
+                            "authorId": "2017943828",
+                            "name": "Jonathan Busquets"
+                        },
+                        {
+                            "authorId": "2149680076",
+                            "name": "Valeria Impedovo"
+                        },
+                        {
+                            "authorId": "2158149346",
+                            "name": "Crystal N Wilson"
+                        },
+                        {
+                            "authorId": "2116077864",
+                            "name": "Hsin-Ru Chan"
+                        },
+                        {
+                            "authorId": "2284324538",
+                            "name": "Yu-Tai Chang"
+                        },
+                        {
+                            "authorId": "2284197913",
+                            "name": "William Matsui"
+                        },
+                        {
+                            "authorId": "3078559",
+                            "name": "S. Tiziani"
+                        },
+                        {
+                            "authorId": "4630479",
+                            "name": "Xiaolu A. Cambronne"
+                        }
+                    ]
+                    }
+    
+                }
+            ]
+        }
+    ]
+}
