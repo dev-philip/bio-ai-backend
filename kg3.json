@@ -1,5 +1,6 @@
 {
-  "clain_id" : 82392819831,  
+  "clain_id" : "8f14e45f-ea8c-4a18-9143-dc9b3ea3df62",
+  "solana_hash": "$bfifwef&bfwbh3232",  
   "claim": "The inhibition of TNF-alpha in human macrophages reduces inflammation and protects neuronal cells in Alzheimer's disease.",
   "cleaned": "inhibition tnf-alpha human macrophages reduces inflammation protects neuronal cells alzheimer disease",
   "semantic_searchable": "inhibition tnf-alpha human macrophages reduces inflammation protects neuronal cells alzheimer disease. Key terms: TNF-alpha, human macrophages, neuronal cells",
@@ -10,51 +11,114 @@
     "cell": ["neuronal cells"]
   },
   "semantic_results": [
-    {
-      "pmid": "40179319",
-      "pmcid": "PMC12074813",
-      "doi": "10.18632/aging.206236",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40179319/",
-      "title": "NAD+ centric mechanisms and molecular determinants of skeletal muscle disease and aging.",
-      "abstract": "The nicotinamide adenine dinucleotide (NAD+) is an essential redox cofactor...",
-      "mesh_terms": ["Aging", "Animals", "Epigenesis, Genetic", "Mice", "Muscle, Skeletal", "Muscular Diseases", "NAD", "Poly(ADP-ribose) Polymerases"],
-      "authors": [
-        {"authorId": "36468098", "name": "Anthony J. Covarrubias"},
-        {"authorId": "144328338", "name": "Rosalba Perrone"}
-      ],
-      "semantic_string": "Title: NAD+ centric mechanisms...",
-      "similarity": 0.6881,
-      "cited_papers": [
-        {
-          "paperId": "4a1f3b91897f96b09d07e883e67215b805623671",
-          "url": "https://www.semanticscholar.org/paper/...",
-          "title": "SLC25A51 decouples the mitochondrial NAD+/NADH ratio...",
-          "abstract": "The nicotinamide adenine dinucleotide (NAD+) is an essential redox cofactor...",
-          "venue": "Cell Metabolism",
-          "year": 2024,
-          "authors": [
-            {"authorId": "2111087142", "name": "Mu-Jie Lu"},
-            {"authorId": "2017943828", "name": "Jonathan Busquets"}
-          ]
-        }
-      ],
-      "reference_papers": [
-        {
-          "paperId": "4a1f3b91897f96b09d07e883e67215b805623671",
-          "url": "https://www.semanticscholar.org/paper/...",
-          "title": "SLC25A51 decouples the mitochondrial NAD+/NADH ratio...",
-          "abstract": "The nicotinamide adenine dinucleotide (NAD+) is an essential redox cofactor...",
-          "venue": "Cell Metabolism",
-          "year": 2024,
-          "authors": [
-            {"authorId": "2111087142", "name": "Mu-Jie Lu"},
-            {"authorId": "2017943828", "name": "Jonathan Busquets"}
-          ]
-        }
-      ]
-    }
+      {
+            "pmid": "40179319",
+            "pmcid": "PMC12074813",
+            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40179319/",
+            "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12074813/",
+            "title": "Decreased mitochondrial NAD+ in WRN deficient cells links to dysfunctional proliferation.",
+            "abstract": "Werner syndrome (WS), caused by mutations in the RecQ helicase WERNER (<i>WRN</i>) gene, is a classical accelerated aging disease with patients suffering from several metabolic dysfunctions without a cure. While, as we previously reported, depleted NAD<sup>+</sup> causes accumulation of damaged mitochondria, leading to compromised metabolism, how mitochondrial NAD<sup>+</sup> changes in WS and the impact on WS pathologies were unknown. We show that loss of WRN increases senescence in mesenchymal stem cells (MSCs) likely related to dysregulation of metabolic and aging pathways. In line with this, NAD<sup>+</sup> augmentation, via supplementation with nicotinamide riboside, reduces senescence and improves mitochondrial metabolic profiles in MSCs with <i>WRN</i> knockout (<i>WRN<sup>-/-</sup></i>) and in primary fibroblasts derived from WS patients compared to controls. Moreover, <i>WRN</i> deficiency results in decreased mitochondrial NAD<sup>+</sup> (measured indirectly via mitochondrially-expressed PARP activity), and altered expression of key salvage pathway enzymes, including NMNAT1 and NAMPT; ChIP-seq data analysis unveils a potential co-regulatory axis between WRN and the NMNATs, likely important for chromatin stability and DNA metabolism. However, restoration of mitochondrial or cellular NAD<sup>+</sup> is not sufficient to reinstall cellular proliferation in immortalized cells with siRNA-mediated knockdown of <i>WRN</i>, highlighting an indispensable role of WRN in proliferation even in an NAD<sup>+</sup> affluent environment. Further cell and animal studies are needed to deepen our understanding of the underlying mechanisms, facilitating related drug development.",
+            "authors": [
+                "Sofie Lautrup",
+                "Shi-Qi Zhang",
+                "Shinichiro Funayama",
+                "Lisa Lirussi",
+                "Tina Visnovska",
+                "Hoi-Hung Cheung",
+                "Marc Niere",
+                "Yuyao Tian",
+                "Hilde Loge Nilsen",
+                "Geir Selbæk",
+                "Janna Saarela",
+                "Yoshiro Maezawa",
+                "Koutaro Yokote",
+                "Per Nilsson",
+                "Wai-Yee Chan",
+                "Hisaya Kato",
+                "Mathias Ziegler",
+                "Vilhelm A Bohr",
+                "Evandro F Fang"
+            ],
+            "affiliations": [
+                "Department of Clinical Molecular Biology, University of Oslo and Akershus University Hospital, L&#xf8;renskog 1478, Norway.",
+                "Department of Clinical Molecular Biology, University of Oslo and Akershus University Hospital, L&#xf8;renskog 1478, Norway.",
+                "Department of Endocrinology, Hematology and Gerontology, Chiba University Graduate School of Medicine, Chiba 260-0856, Japan.",
+                "Department of Diabetes, Metabolism and Endocrinology, Chiba University Hospital, Chiba 260-8677, Japan.",
+                "Department of Clinical Molecular Biology, University of Oslo and Akershus University Hospital, L&#xf8;renskog 1478, Norway.",
+                "Department of Microbiology, Oslo University Hospital, Oslo 0450, Norway.",
+                "Department of Clinical Molecular Biology, University of Oslo and Akershus University Hospital, L&#xf8;renskog 1478, Norway.",
+                "School of Biomedical Sciences, Faculty of Medicine, The Chinese University of Hong Kong, Shatin, N.T., Hong Kong.",
+                "Department of Biomedicine, University of Bergen, Bergen 5009, Norway.",
+                "School of Biomedical Sciences, Faculty of Medicine, The Chinese University of Hong Kong, Shatin, N.T., Hong Kong.",
+                "Genetics and Aging Research Unit, McCance Center for Brain Health, Mass General Institute for Neurodegenerative Disease, Department of Neurology, Massachusetts General Hospital, Charlestown, MA 02129, USA.",
+                "Department of Microbiology, Oslo University Hospital, Oslo 0450, Norway.",
+                "Institute of Clinical Medicine, University of Oslo, Oslo 0372, Norway.",
+                "Institute of Clinical Medicine, University of Oslo, Oslo 0372, Norway.",
+                "The Norwegian National Centre for Aging and Health, Vestfold Hospital Trust, T&#xf8;nsberg 3103, Norway.",
+                "Department of Geriatric Medicine, Oslo University Hospital, Oslo 0450, Norway.",
+                "Centre for Molecular Medicine Norway (NCMM), University of Oslo, Oslo 0372, Norway.",
+                "Institute for Molecular Medicine Finland (FIMM), HiLIFE, University of Helsinki, Helsinki, Finland.",
+                "Department of Medical Genetics, Oslo University Hospital, Oslo 0450, Norway.",
+                "Department of Endocrinology, Hematology and Gerontology, Chiba University Graduate School of Medicine, Chiba 260-0856, Japan.",
+                "Department of Diabetes, Metabolism and Endocrinology, Chiba University Hospital, Chiba 260-8677, Japan.",
+                "Department of Endocrinology, Hematology and Gerontology, Chiba University Graduate School of Medicine, Chiba 260-0856, Japan.",
+                "Department of Diabetes, Metabolism and Endocrinology, Chiba University Hospital, Chiba 260-8677, Japan.",
+                "Department of Neurobiology, Care Sciences and Society, Center for Alzheimer Research, Division of Neurogeriatrics, Karolinska Institutet, Solna 17164, Sweden.",
+                "School of Biomedical Sciences, Faculty of Medicine, The Chinese University of Hong Kong, Shatin, N.T., Hong Kong.",
+                "Department of Endocrinology, Hematology and Gerontology, Chiba University Graduate School of Medicine, Chiba 260-0856, Japan.",
+                "Department of Diabetes, Metabolism and Endocrinology, Chiba University Hospital, Chiba 260-8677, Japan.",
+                "Department of Biomedicine, University of Bergen, Bergen 5009, Norway.",
+                "Leibniz Institute for Natural Product Research and Infection Biology, Hans Kn&#xf6;ll Institute, Jena 07745, Germany.",
+                "Department of Cellular and Molecular Medicine, Center for Healthy Aging, University of Copenhagen, Copenhagen 1172, Denmark.",
+                "Department of Clinical Molecular Biology, University of Oslo and Akershus University Hospital, L&#xf8;renskog 1478, Norway.",
+                "The Norwegian Centre on Healthy Ageing (NO-Age) and The Norwegian National Anti-Alzheimer&#x2019;s Disease (NO-AD) Networks, Oslo 0372, Norway."
+            ],
+            "journal": "Aging",
+            "journal_abbrev": "Aging (Albany NY)",
+            "publication_date": "2025 Apr 02",
+            "year": "2025",
+            "language": [
+                "eng"
+            ],
+            "article_types": [
+                "Journal Article"
+            ],
+            "mesh_terms": [
+                "Werner Syndrome Helicase",
+                "NAD",
+                "Humans",
+                "Mitochondria",
+                "Werner Syndrome",
+                "Cell Proliferation",
+                "Mesenchymal Stem Cells",
+                "Fibroblasts",
+                "Cellular Senescence",
+                "Animals",
+                "Nicotinamide Phosphoribosyltransferase",
+                "Mice",
+                "Niacinamide"
+            ],
+            "grant_support": [
+                {
+                    "agency": "Wellcome Trust",
+                    "country": "United Kingdom",
+                    "grant_id": ""
+                },
+                {
+                    "agency": "NIA NIH HHS",
+                    "country": "United States",
+                    "grant_id": "R01 AG012975"
+                }
+            ],
+            "doi": "10.18632/aging.206236",
+            "semantic_string": "Title: NAD<sup>+</sup> centric mechanisms and molecular determinants of skeletal muscle disease and aging. Abstract: The nicotinamide adenine dinucleotide (NAD<sup>+</sup>) is an essential redox cofactor, involved in various physiological and molecular processes, including energy metabolism, epigenetics, aging, and metabolic diseases. NAD<sup>+</sup> repletion ameliorates muscular dystrophy and improves the mitochondrial and muscle stem cell function and thereby increase lifespan in mice. Accordingly, NAD<sup>+</sup> is considered as an anti-oxidant and anti-aging molecule. NAD<sup>+</sup> plays a central role in energy metabolism and the energy produced is used for movements, thermoregulation, and defense against foreign bodies. The dietary precursors of NAD<sup>+</sup> synthesis is targeted to improve NAD<sup>+</sup> biosynthesis; however, studies have revealed conflicting results regarding skeletal muscle-specific effects. Recent advances in the activation of nicotinamide phosphoribosyltransferase in the NAD<sup>+</sup> salvage pathway and supplementation of NAD<sup>+</sup> precursors have led to beneficial effects in skeletal muscle pathophysiology and function during aging and associated metabolic diseases. NAD<sup>+</sup> is also involved in the epigenetic regulation and post-translational modifications of proteins that are involved in various cellular processes to maintain tissue homeostasis. This review provides detailed insights into the roles of NAD<sup>+</sup> along with molecular mechanisms during aging and disease conditions, such as the impacts of age-related NAD<sup>+</sup> deficiencies on NAD<sup>+</sup>-dependent enzymes, including poly (ADP-ribose) polymerase (PARPs), CD38, and sirtuins within skeletal muscle, and the most recent studies on the potential of nutritional supplementation and distinct modes of exercise to replenish the NAD<sup>+</sup> pool. MeSH Terms: Aging, Animals, Epigenesis, Genetic, Mice, Muscle, Skeletal, Muscular Diseases, NAD, Poly(ADP-ribose) Polymerases Article Type: Journal Article, Review Published in Molecular and cellular biochemistry (2022)",
+            "similarity": 0.7039
+      }
   ],
   "source_type": "text",
   "timestamp": "2025-05-20T14:30:00Z",
-  "null_hypothesis_detected": false
+  "null_hypothesis_detected": false,
+  "verdict": "supported",
+  "summary": "The majority of the studies suggest that NAD+ supplementation improves healthspan and has beneficial effects on aging and age-related diseases in mammals. However, one study found that while NAD+ precursor, nicotinamide, improved healthspan, it did not extend lifespan in mice.",
+  "reasoning": "Article 1 supports the claim, stating that NAD+ repletion improves muscle stem cell function and increases lifespan in mice. It also mentions that NAD+ is considered an anti-aging molecule. Article 2 also supports the claim, stating that increasing NAD+ by supplementation with precursors appears to extend healthspan in model organisms. However, it also mentions that human studies are limited and results are mixed. Article 3 supports the claim, stating that restoring NAD+ levels using supplementation can be a valuable strategy for recovery of age-associated defects. Article 4 supports the claim, stating that supplementation of NAD+ precursors may restore NAD+ levels present in youth and reduce the risk of age-related diseases. However, Article 5 contradicts the claim, stating that while nicotinamide, a precursor of NAD+, improved healthspan in mice, it did not extend lifespan. Despite this, the majority of the articles support the claim that NAD+ supplementation increases lifespan in mammals."
 }

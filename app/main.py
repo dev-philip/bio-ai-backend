@@ -5,6 +5,7 @@ from app.database import Base, engine
 #Models - import all models
 from app.models import user 
 from app.models import student
+
 #Routers
 from app.routers import pubmed as pubmed_router
 from app.routers import user as user_router
@@ -12,6 +13,8 @@ from app.routers import student as student_router
 from app.routers import text_extraction as text_extraction_router
 from app.routers import text_cleaning as text_cleaning_router
 from app.routers import image_analysis as image_analysis_router
+from app.routers import neo4j_routes as neo4j_router
+from app.routers import claim_result as claim_result_router
 # End of routers
 import logging
 
@@ -60,4 +63,6 @@ app.include_router(text_extraction_router.router, prefix="/nlp", tags=["NLP"])
 app.include_router(text_cleaning_router.router, prefix="/nlp", tags=["NLP"])
 app.include_router(image_analysis_router.router, prefix="/vision", tags=["Vision"])
 app.include_router(pubmed_router.router, prefix="/api", tags=["Pubmed Search"])
+app.include_router(neo4j_router.router, prefix="/neo4j", tags=["Neo4j Endpoint"])
+app.include_router(claim_result_router.router, prefix="/claim", tags=["Claims Endpoint"])
 

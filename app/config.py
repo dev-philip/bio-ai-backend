@@ -12,6 +12,9 @@ class Settings(BaseSettings):
     POSTGRES_DB:str
     POSTGRES_HOST:str
     POSTGRES_PORT:str
+    NEO4J_URI:str
+    NEO4J_USER:str
+    NEO4J_PASSWORD:str
 
     class Config:
         env_file = ".env"

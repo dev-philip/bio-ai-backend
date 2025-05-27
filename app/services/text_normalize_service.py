@@ -1,6 +1,8 @@
 import re
 import nltk
 from typing import Optional, Dict, Any, List
+import uuid
+from datetime import datetime, timezone
 
 # Download resources once
 nltk.download('stopwords')
@@ -59,11 +61,13 @@ def prepare_claim_payload(claim: str) -> Dict[str, Any]:
     semantic_string = f"{normalize_text(claim.strip(), True)}. Key terms: {', '.join(filtered_entities)}"
 
     return {
+        "clain_id" : str(uuid.uuid4()),
         "claim": claim.strip(),
         "cleaned": cleaned,
         "Semantic_searchable": semantic_string,
         "entities": filtered_entities,
-        "biomedical_entities": bio_entities
+        "biomedical_entities": bio_entities,
+        "timestamp" : str(datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"))
     }
 
 # Example usage:

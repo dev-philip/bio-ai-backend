@@ -24,6 +24,7 @@ numpy<2.0
 asyncpg
 databases
 psycopg2-binary
+neo4j
 
 #Biomedical NLP
 spacy>=3.6.1
