@@ -15,6 +15,7 @@ from app.routers import text_cleaning as text_cleaning_router
 from app.routers import image_analysis as image_analysis_router
 from app.routers import neo4j_routes as neo4j_router
 from app.routers import claim_result as claim_result_router
+from app.routers import solana_routes as solana_router
 # End of routers
 import logging
 
@@ -65,4 +66,5 @@ app.include_router(image_analysis_router.router, prefix="/vision", tags=["Vision
 app.include_router(pubmed_router.router, prefix="/api", tags=["Pubmed Search"])
 app.include_router(neo4j_router.router, prefix="/neo4j", tags=["Neo4j Endpoint"])
 app.include_router(claim_result_router.router, prefix="/claim", tags=["Claims Endpoint"])
+app.include_router(solana_router.router, prefix="/blockchain", tags=["Blockchain Endpoint"])
 

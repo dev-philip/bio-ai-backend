@@ -9,8 +9,6 @@ load_dotenv()
 
 router = APIRouter()
 
-print("OpenAI Key:", os.getenv("OPENAI_API_KEY"))
-
 # Initialize OpenAI client using env var
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 

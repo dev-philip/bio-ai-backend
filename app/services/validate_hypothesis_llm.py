@@ -7,9 +7,6 @@ load_dotenv()
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage
 
-# Optional: Debug check
-print("Olamide => OPENAI_API_KEY:", os.getenv("OPENAI_API_KEY"))
-
 # Instantiate the OpenAI chat model
 llm = ChatOpenAI(temperature=0, model_name="gpt-4")
 

@@ -12,7 +12,14 @@ NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD")
 # Create Neo4j driver
 driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 
+
 # Run Cypher query with parameters
-def run_query(query: str, parameters: dict = {}):
+# For reads
+def run_read_query(query: str, parameters: dict = {}):
     with driver.session() as session:
-        session.execute_write(lambda tx: tx.run(query, parameters))
+        return session.execute_read(lambda tx: tx.run(query, parameters).data())
+
+# For writes
+def run_write_query(query: str, parameters: dict = {}):
+    with driver.session() as session:
+        return session.execute_write(lambda tx: tx.run(query, parameters).data())

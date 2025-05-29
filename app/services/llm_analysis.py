@@ -25,3 +25,16 @@ Abstracts:
 """
     response = llm([HumanMessage(content=prompt)])
     return response.content
+
+
+
+
+# in is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+# in is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+# in is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+# `from langchain_community.chat_models import ChatOpenAI`.
+
+# To install langchain-community run `pip install -U langchain-community`.        
+#   warnings.warn(

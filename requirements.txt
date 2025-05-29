@@ -25,6 +25,8 @@ asyncpg
 databases
 psycopg2-binary
 neo4j
+solana>=0.30.0,<0.37.0
+base58
 
 #Biomedical NLP
 spacy>=3.6.1
