@@ -103,3 +103,34 @@ async def get_account(account_pubkey: str):
         raise e
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error fetching account info: {e}")
+    
+
+
+
+@router.post("/send-json")
+async def send_json():
+    json_data = {
+        "claim": "NAD+ increases lifespan in mammals",
+        "verdict": "Not supported",
+        "score": 0.3
+    }
+
+    data_bytes = json.dumps(json_data).encode("utf-8")
+
+    ix = Instruction(
+        program_id=Pubkey.from_string("YourProgramIDHere"),
+        accounts=[
+            {"pubkey": signer.pubkey(), "is_signer": True, "is_writable": True},
+            {"pubkey": Pubkey.from_string("YourTargetAccountPDA"), "is_signer": False, "is_writable": True}
+        ],
+        data=data_bytes
+    )
+
+    tx = Transaction([ix])
+
+    try:
+        resp = await solana_client.send_transaction(tx, signer)
+        await solana_client.confirm_transaction(resp.value)
+        return {"tx_signature": resp.value}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error sending transaction: {e}")

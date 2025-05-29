@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from app.database import Base, engine
@@ -30,6 +30,9 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# Create the main API router with a shared prefix
+api_router = APIRouter(prefix="/api/v1")
+
 # CORS settings (allow all for now; restrict in production)
 app.add_middleware(
     CORSMiddleware,
@@ -57,14 +60,16 @@ async def general_exception_handler(request: Request, exc: Exception):
 def read_root():
     return {"message": "Welcome to FastAPI + MySQL 🚀"}
 
-# Register user routes
-app.include_router(user_router.router, prefix="/users", tags=["Users"])
-app.include_router(student_router.router, prefix="/students", tags=["Students"])
-app.include_router(text_extraction_router.router, prefix="/nlp", tags=["NLP"])  
-app.include_router(text_cleaning_router.router, prefix="/nlp", tags=["NLP"])
-app.include_router(image_analysis_router.router, prefix="/vision", tags=["Vision"])
-app.include_router(pubmed_router.router, prefix="/api", tags=["Pubmed Search"])
-app.include_router(neo4j_router.router, prefix="/neo4j", tags=["Neo4j Endpoint"])
-app.include_router(claim_result_router.router, prefix="/claim", tags=["Claims Endpoint"])
-app.include_router(solana_router.router, prefix="/blockchain", tags=["Blockchain Endpoint"])
+# Register your sub-routers to the main router
+api_router.include_router(user_router.router, prefix="/users", tags=["Users"])
+api_router.include_router(student_router.router, prefix="/students", tags=["Students"])
+api_router.include_router(text_extraction_router.router, prefix="/nlp", tags=["NLP"])
+api_router.include_router(text_cleaning_router.router, prefix="/nlp", tags=["NLP"])
+api_router.include_router(image_analysis_router.router, prefix="/vision", tags=["Vision"])
+api_router.include_router(pubmed_router.router, prefix="/pubmed", tags=["Pubmed Search"])
+api_router.include_router(neo4j_router.router, prefix="/neo4j", tags=["Neo4j Endpoint"])
+api_router.include_router(claim_result_router.router, prefix="/claim", tags=["Claims Endpoint"])
+api_router.include_router(solana_router.router, prefix="/blockchain", tags=["Blockchain Endpoint"])
 
+# Include the main API router into your FastAPI app
+app.include_router(api_router)
