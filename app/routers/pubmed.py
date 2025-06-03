@@ -4,6 +4,7 @@ from app.services.pubmed import search_and_extract
 from app.services.pubmed_for_semantic import search_and_extract_semantic, build_embedding_text
 from app.services.similarity_search import rank_articles_by_similarity
 from app.services.llm_null_analysis import check_null_hypothesis
+from app.services.similarity_search import handle_similarity_search_full
 
 router = APIRouter()
 
@@ -18,7 +19,7 @@ class ClaimRequest(BaseModel):
 #     except Exception as e:
 #         raise HTTPException(status_code=500, detail=str(e))
 
-@router.post("/pubmed/search")
+@router.post("/search")
 async def search_pubmed(request: ClaimRequest):
     try:
         results = await search_and_extract(request.claim)  # ✅ await here
@@ -26,7 +27,7 @@ async def search_pubmed(request: ClaimRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     
-@router.post("/pubmed/build-semantic-search")
+@router.post("/build-semantic-search")
 async def search_pubmed(request: ClaimRequest):
     try:
         results = await search_and_extract_semantic(request.claim)
@@ -50,7 +51,7 @@ async def search_pubmed(request: ClaimRequest):
         raise HTTPException(status_code=500, detail=str(e))
     
 
-@router.post("/pubmed/embed/do/similarity-search")
+@router.post("/embed/do/similarity-search")
 async def similarity_search(request: ClaimRequest):
     try:
         articles = await search_and_extract_semantic(request.claim)
@@ -82,3 +83,7 @@ async def similarity_search(request: ClaimRequest):
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    
+@router.post("/embed/do/similarity-search/full")
+async def similarity_search_full(request: ClaimRequest):
+    return await handle_similarity_search_full(request.claim)

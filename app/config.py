@@ -15,6 +15,9 @@ class Settings(BaseSettings):
     NEO4J_URI:str
     NEO4J_USER:str
     NEO4J_PASSWORD:str
+    PUBMED_EMAIL: str
+    PUBMED_TOOL: str
+    PUBMED_API_KEY: str
 
     class Config:
         env_file = ".env"
