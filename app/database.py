@@ -18,8 +18,8 @@ DATABASE_URL = (
     f"/{os.getenv('POSTGRES_DB', 'bio_ai')}"
 )
 
-_engine: AsyncEngine
-_SessionLocal: async_sessionmaker[AsyncSession]
+_engine = None
+_SessionLocal = None
 
 metadata = MetaData(
     naming_convention={

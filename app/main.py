@@ -3,15 +3,15 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 # Routers
-# from app.routers import pubmed as pubmed_router
+from app.routers import pubmed as pubmed_router
 from app.routers import auth as auth_router
+from app.routers import text_extraction as text_extraction_router
+from app.routers import text_cleaning as text_cleaning_router
+from app.routers import image_analysis as image_analysis_router
+from app.routers import neo4j_routes as neo4j_router
+from app.routers import claim_result as claim_result_router
+from app.routers import solana_routes as solana_router
 
-# from app.routers import text_extraction as text_extraction_router
-# from app.routers import text_cleaning as text_cleaning_router
-# from app.routers import image_analysis as image_analysis_router
-# from app.routers import neo4j_routes as neo4j_router
-# from app.routers import claim_result as claim_result_router
-# from app.routers import solana_routes as solana_router
 # End of routers
 import logging
 
@@ -70,21 +70,21 @@ def read_root():
 # Register your sub-routers to the main router
 api_router.include_router(auth_router.router, prefix="/auth", tags=["Auth"])
 
-# api_router.include_router(text_extraction_router.router, prefix="/nlp", tags=["NLP"])
-# api_router.include_router(text_cleaning_router.router, prefix="/nlp", tags=["NLP"])
-# api_router.include_router(
-#     image_analysis_router.router, prefix="/vision", tags=["Vision"]
-# )
-# api_router.include_router(
-#     pubmed_router.router, prefix="/pubmed", tags=["Pubmed Search"]
-# )
-# api_router.include_router(neo4j_router.router, prefix="/neo4j", tags=["Neo4j Endpoint"])
-# api_router.include_router(
-#     claim_result_router.router, prefix="/claim", tags=["Claims Endpoint"]
-# )
-# api_router.include_router(
-#     solana_router.router, prefix="/blockchain", tags=["Blockchain Endpoint"]
-# )
+api_router.include_router(text_extraction_router.router, prefix="/nlp", tags=["NLP"])
+api_router.include_router(text_cleaning_router.router, prefix="/nlp", tags=["NLP"])
+api_router.include_router(
+    image_analysis_router.router, prefix="/vision", tags=["Vision"]
+)
+api_router.include_router(
+    pubmed_router.router, prefix="/pubmed", tags=["Pubmed Search"]
+)
+api_router.include_router(neo4j_router.router, prefix="/neo4j", tags=["Neo4j Endpoint"])
+api_router.include_router(
+    claim_result_router.router, prefix="/claim", tags=["Claims Endpoint"]
+)
+api_router.include_router(
+    solana_router.router, prefix="/blockchain", tags=["Blockchain Endpoint"]
+)
 
 # Include the main API router into your FastAPI app
 app.include_router(api_router)

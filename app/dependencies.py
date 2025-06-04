@@ -21,7 +21,7 @@ ALGORITHM = "HS256"
 
 
 @asynccontextmanager
-async def get_db() -> AsyncIterator[AsyncSession]:
+async def get_async_session() -> AsyncIterator[AsyncSession]:
     """Proper async context manager for database sessions
     with full transaction handling"""
     session_factory = get_sessionmaker()
@@ -30,6 +30,8 @@ async def get_db() -> AsyncIterator[AsyncSession]:
     print("Database session created")
     try:
         yield session
+        await session.commit()
+        print("Transaction committed")
     except Exception as e:
         await session.rollback()
         print(f"Transaction rolled back: {str(e)}")
@@ -37,6 +39,11 @@ async def get_db() -> AsyncIterator[AsyncSession]:
     finally:
         await session.close()
         print("Session closed")
+
+
+async def get_db() -> AsyncIterator[AsyncSession]:
+    async with get_async_session() as session:
+        yield session
 
 
 async def get_user_repo(db: AsyncSession = Depends(get_db)):
