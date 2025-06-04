@@ -1,16 +1,13 @@
 import os
 from dotenv import load_dotenv
-import re
-
 # Load environment variables from .env file
 load_dotenv()
-
-from langchain.chat_models import ChatOpenAI
+import re
+import json
 from langchain.schema import HumanMessage
 
-llm = ChatOpenAI(temperature=0, model_name="gpt-4")
 
-def check_null_hypothesis(claim: str, top_articles: list) -> str:
+def check_null_hypothesis(claim: str, top_articles: list, llm) -> dict:
     context = "\n\n".join(
         f"Title: {a['title']}\nAbstract: {a['abstract']}" for a in top_articles
     )
@@ -31,13 +28,11 @@ def check_null_hypothesis(claim: str, top_articles: list) -> str:
         f"Abstracts:\n{context}"
     )
 
-    response = llm([HumanMessage(content=prompt)]).content
+    response = llm.invoke([HumanMessage(content=prompt)]).content
 
-    # Try parsing JSON using regex
     try:
         match = re.search(r'\{.*\}', response, re.DOTALL)
         if match:
-            import json
             return json.loads(match.group())
         else:
             return {

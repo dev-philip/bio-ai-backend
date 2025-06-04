@@ -11,7 +11,7 @@ from app.routers import image_analysis as image_analysis_router
 from app.routers import neo4j_routes as neo4j_router
 from app.routers import claim_result as claim_result_router
 from app.routers import solana_routes as solana_router
-
+from app.routers import null_verifier_routes as null_verifier_router
 # End of routers
 import logging
 
@@ -79,12 +79,10 @@ api_router.include_router(
     pubmed_router.router, prefix="/pubmed", tags=["Pubmed Search"]
 )
 api_router.include_router(neo4j_router.router, prefix="/neo4j", tags=["Neo4j Endpoint"])
-api_router.include_router(
-    claim_result_router.router, prefix="/claim", tags=["Claims Endpoint"]
-)
-api_router.include_router(
-    solana_router.router, prefix="/blockchain", tags=["Blockchain Endpoint"]
-)
+
+api_router.include_router(claim_result_router.router, prefix="/claim", tags=["Claims Endpoint"])
+api_router.include_router(solana_router.router, prefix="/blockchain", tags=["Blockchain Endpoint"])
+api_router.include_router(null_verifier_router.router, prefix="/engine", tags=["Null Verifier"])
 
 # Include the main API router into your FastAPI app
 app.include_router(api_router)

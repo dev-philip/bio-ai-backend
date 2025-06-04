@@ -2,7 +2,6 @@ import re
 import nltk
 from typing import Optional, Dict, Any, List
 import uuid
-from datetime import datetime, timezone
 
 # Download resources once
 nltk.download("stopwords")
@@ -70,12 +69,7 @@ def prepare_claim_payload(claim: str) -> Dict[str, Any]:
         "cleaned": cleaned,
         "Semantic_searchable": semantic_string,
         "entities": filtered_entities,
-        "biomedical_entities": bio_entities,
-        "timestamp": str(
-            datetime.now(timezone.utc)
-            .isoformat(timespec="seconds")
-            .replace("+00:00", "Z")
-        ),
+        "biomedical_entities": bio_entities
     }
 
 

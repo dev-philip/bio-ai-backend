@@ -1,3 +1,7 @@
+import os
+from dotenv import load_dotenv
+# Load environment variables from .env file
+load_dotenv()
 from Bio import Entrez
 from typing import List, Dict
 from fastapi.concurrency import run_in_threadpool
@@ -6,8 +10,10 @@ from app.services.semantic_scholar import (
     get_citations_and_references,
 )  # Assuming you have this from earlier
 
-Entrez.email = "olamideawobusuyi2001@gmail.com"
-Entrez.tool = "bio-ai-backend"
+
+Entrez.email = os.getenv("PUBMED_EMAIL")
+Entrez.tool = os.getenv("PUBMED_TOOL")
+Entrez.api_key = os.getenv("PUBMED_API_KEY")
 
 
 def _search_and_extract(claim: str, max_results: int = 100) -> List[Dict[str, str]]:
