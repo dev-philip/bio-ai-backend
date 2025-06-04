@@ -1,15 +1,18 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
 from typing import Optional
+
 # from app.services.text_normalize_service import normalize_text
 from app.services.text_normalize_service import prepare_claim_payload
 from app.services.validate_hypothesis_llm import validate_hypothesis
 
 router = APIRouter()
 
+
 class TextCleanRequest(BaseModel):
     text: str
     remove_stopwords: Optional[bool] = False
+
 
 @router.post("/clean-text", summary="Clean and normalize scientific text")
 def clean_text(req: TextCleanRequest):
@@ -17,7 +20,6 @@ def clean_text(req: TextCleanRequest):
     # return {"cleaned": cleaned}
     result = prepare_claim_payload(req.text)
     return result
-    
 
 
 @router.post("/hypothesis/validate", summary="Validate user input")
