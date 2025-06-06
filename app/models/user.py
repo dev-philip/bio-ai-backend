@@ -1,4 +1,4 @@
-from sqlalchemy import String, DateTime, UUID
+from sqlalchemy import String, DateTime, UUID, Column, func
 from sqlalchemy.orm import Mapped, mapped_column
 from app.database import Base
 from datetime import datetime, timezone
@@ -12,7 +12,7 @@ class User(Base):
     name: Mapped[str] = mapped_column(String)
     email: Mapped[str] = mapped_column(String, unique=True)
     google_id: Mapped[str] = mapped_column(String, unique=True)
-    created_at: Mapped[datetime] = mapped_column(
-        DateTime(timezone=True),
-        default=lambda: datetime.now(timezone.utc),
-    )
+    # Auto-managed timestamps
+    created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now(), nullable=False)
+

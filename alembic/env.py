@@ -18,7 +18,7 @@ DATABASE_URL = (
     f"postgresql://{os.getenv('POSTGRES_USER')}"
     f":{os.getenv('POSTGRES_PASSWORD')}"
     f"@{os.getenv('POSTGRES_HOST')}:{os.getenv('POSTGRES_PORT')}"
-    f"/{os.getenv('POSTGRES_DB', 'bio_ai')}"
+    f"/{os.getenv('POSTGRES_DB')}"
 )
 
 # this is the Alembic Config object, which provides

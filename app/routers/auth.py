@@ -5,7 +5,7 @@ from app.schemas.auth import AuthRequest, AuthResponse
 router = APIRouter()
 
 
-@router.post("/google", response_model=AuthResponse)
+@router.post("/google/callback", response_model=AuthResponse)
 async def process_google_auth(req: AuthRequest, service: AuthServiceDep):
     print(f"Received Google auth code: {req.code}")
     """
